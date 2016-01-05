@@ -29,8 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Remove this line if you don't want to use Local Datastore features or want to use cachePolicy.
         Parse.enableLocalDatastore()
 
-        Parse.setApplicationId("XXX",
-            clientKey: "XXX")
+        Parse.setApplicationId("4qbvUZWmqb7LFskUucuogZVl6pvx8m5i9JoJFcmv",
+            clientKey: "HJ1kXqukjr4Yqg7k2lfxRBnCPaCoBC3pSFa7pY4E")
+
 
         PFUser.enableAutomaticUser()
 
@@ -92,7 +93,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
         if error.code == 3010 {
-            print("Push notifications are not supported in the iOS Simulator.")
+//            print("Push notifications are not supported in the iOS Simulator.")
         } else {
             print("application:didFailToRegisterForRemoteNotificationsWithError: %@", error)
         }
